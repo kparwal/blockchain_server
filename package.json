@@ -1,0 +1,19 @@
+{
+  "name": "blockchain_server",
+  "version": "1.0.0",
+  "description": "blockchain server for idforweb",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Keshav Parwal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "merkle-tree": "^0.0.14",
+    "mongodb": "^2.1.7",
+    "python-shell": "^0.4.0"
+  },
+  "devDependencies": {}
+}
