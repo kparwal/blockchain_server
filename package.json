@@ -15,5 +15,17 @@
     "mongodb": "^2.1.7",
     "python-shell": "^0.4.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kparwal/blockchain_server.git"
+  },
+  "keywords": [
+    "merkle",
+    "bitcoin"
+  ],
+  "bugs": {
+    "url": "https://github.com/kparwal/blockchain_server/issues"
+  },
+  "homepage": "https://github.com/kparwal/blockchain_server#readme"
 }
