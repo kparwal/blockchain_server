@@ -1,5 +1,17 @@
+# Created by https://www.gitignore.io/api/vim,node,linux
 
-# Created by https://www.gitignore.io/api/node
+### Vim ###
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags
+
 
 ### Node ###
 # Logs
@@ -36,3 +48,16 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
