@@ -7,6 +7,7 @@ var mongo_client = require('mongodb');
 var python_shell = require('python-shell');
 var assert = require('assert');
 var app = express();
+var message_base = require('./message');
 var block_num = 0; //persistence required across runs
 var buffer = [];
 //Connect to mongodb
@@ -24,7 +25,13 @@ var current_tree = new merkle_base.MemTree(config);
 
 //Message created
 app.post('/', function (request, response) {
-	console.log(request);
+	//console.log(request);
+	var fname = request.fname;
+	var lname = request.lname;
+	var hash = request.hash;
+	var message = new message_base(userid, fname, lname, hash);
+	message.timestamp(current_time);
+	buffer.push(message);
 	response.end('Received POST request!');
 });
 
