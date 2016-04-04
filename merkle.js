@@ -67,7 +67,7 @@ merkle.prototype.rehash_tree = function () {
 		var current_level = [];
 		for (var i = 0; i < datalist.length; i++) {	
 			if (datalist[i+1]) {
-				var hashnode = new hash_node(hash_two(datalist[i], datalist[i+1]), i, false, false);
+				var hashnode = new hash_node(hash_two(datalist[i], datalist[i+1]), current_level.length, false, false);
 				current_level.push(hashnode);
 				i++;
 			} else {
@@ -100,7 +100,6 @@ merkle.prototype.find = function(key) {
 	for (var i = 0; i < datalist.length; i++) {
 		if (key === datalist[i].key) {
 			found_data = datalist[i];
-			console.log(found_data);
 		}
 	}
 	if (found_data) {
@@ -111,8 +110,6 @@ merkle.prototype.find = function(key) {
 			return false;
 		}
 		for (var i = 0; i < treelist.length; i++) {
-			console.log(node);
-			console.log(i);
 			if (node === this.root) {
 				return true;
 			}
@@ -120,7 +117,7 @@ merkle.prototype.find = function(key) {
 				if (hash_one(node) !== treelist[i + 1][get_parent(node.index)].hash) {
 					return false;
 				} else {
-					node = tree_list[i + 1][get_parent(node.index)];
+					node = treelist[i + 1][get_parent(node.index)];
 				}
 			} else {
 				var sibling = null;
@@ -130,14 +127,12 @@ merkle.prototype.find = function(key) {
 					duo = hash_two(node, sibling);
 				} else {
 					sibling = treelist[i][node.index - 1];
-					console.log(sibling);
-					duo = hash_two(sibling, duo);
+					duo = hash_two(sibling, node);
 				}
 				if (duo !== treelist[i + 1][get_parent(node.index)].hash) {
-					console.log("here");
 					return false;
 				} else {
-					node = tree_list[i + 1][get_parent(node.index)];
+					node = treelist[i + 1][get_parent(node.index)];
 				}
 			}
 		}

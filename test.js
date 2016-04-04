@@ -21,7 +21,7 @@ mytree.add(3, {
 })
 
 
-mytree.add(4, {
+mytree.add(5, {
 	'name': 'something3',
 	'age': 23
 })
@@ -33,3 +33,4 @@ var obj = {
 
 console.log(mytree);
 console.log(mytree.find(4))
+console.log(mytree.find(5))
