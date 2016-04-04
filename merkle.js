@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 var crypto = require('crypto');
 
 var hash_one = function (data) {
@@ -7,7 +7,7 @@ var hash_one = function (data) {
 	hash.update(buffer_data);
     var digest = hash.digest('hex');
     return digest;
-}
+};
 
 var hash_two = function (data1, data2) {
 	var hash = crypto.createHash('sha256');
@@ -17,7 +17,7 @@ var hash_two = function (data1, data2) {
 	hash.update(buffer_data2);
     var digest = hash.digest('hex');
     return digest;
-}
+};
 
 var data_node = function (key, data, index) {
 	this.key = key;
@@ -32,25 +32,24 @@ var hash_node = function (hash, index, single) {
 	this.is_root = false;
 };
 
+var get_parent = function(n) {
+    return Math.floor(n / 2);
+};
+
+var is_orphan = function(n, len) {
+    return (n%2 == 0) && (n == len);
+};
+
 var merkle = function () {
 	this.data_list = [];
 	this.tree_list = [];
 	this.root = [];
 };
-
 merkle.prototype.add = function(key, data) {
 	var node = new data_node(key, data, this.data_list.length);
 	this.data_list.push(node);
 	return this.rehash_tree();
 };
-
-var get_parent = function(n) {
-	return Math.floor(n / 2);
-};
-
-var is_orphan = function(n, len) {
-	return (n%2 == 0) && (n == len);
-}
 
 merkle.prototype.rehash_tree = function () {
 	var datalist = this.data_list;
@@ -58,7 +57,7 @@ merkle.prototype.rehash_tree = function () {
 	var hashlist = [];
 	this.tree_list = [];
 	for (var i = 0; i < datalist.length; i++) {
-		var hashnode = new hash_node(hash_one(datalist[i]), i, is_orphan(i, datalist.length));
+		var hashnode = new hash_node(hash_one(datalist[i]), i, is_orphan(i, datalist.length-1));
 		hashlist.push(hashnode);
 	}
 	this.tree_list.push(hashlist);
@@ -83,6 +82,7 @@ merkle.prototype.rehash_tree = function () {
 	}
 	this.tree_list[this.tree_list.length - 1][0].is_root = true;
 	this.root = this.tree_list[this.tree_list.length - 1][0];
+    return this;
 };
 
 merkle.prototype.root = function() {

@@ -2,7 +2,104 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18a01222-94d8-4b2e-b926-a2399c334d50" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\SIGNED.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\lib\main.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\lib\mem.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\lib\tree.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\deep-equal\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\deep-equal\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\deep-equal\example\cmp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\deep-equal\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\deep-equal\lib\is_arguments.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\deep-equal\lib\keys.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\deep-equal\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\deep-equal\readme.markdown" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\deep-equal\test\cmp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-error\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-error\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-error\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-error\SIGNED.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-error\index.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-error\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-error\index.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-error\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-runtime\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-runtime\CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-runtime\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-runtime\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-runtime\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-runtime\SIGNED.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-runtime\lib\const.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-runtime\lib\library.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-runtime\lib\main.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-runtime\lib\runtime.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-runtime\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-runtime\src\const.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-runtime\src\library.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-runtime\src\main.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-runtime\src\runtime.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\SIGNED.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\lib\drain.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\lib\enum.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\lib\fs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\lib\getopt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\lib\gets.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\lib\lock.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\lib\lockfile.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\lib\main.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\lib\spawn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\lib\tail.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\lib\util.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\node_modules\iced-lock\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\node_modules\iced-lock\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\node_modules\iced-lock\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\node_modules\iced-lock\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\node_modules\iced-lock\SIGNED.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\node_modules\iced-lock\index.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\node_modules\iced-lock\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\node_modules\iced-lock\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\src\drain.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\src\enum.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\src\fs.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\src\getopt.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\src\gets.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\src\lockfile.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\src\main.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\src\spawn.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\src\tail.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\src\util.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\test\files\dict_merge.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\test\files\drain.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\test\files\getopt.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\test\files\lock.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\test\files\tail.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\test\files\taildata.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\node_modules\iced-utils\test\run.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\src\main.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\src\mem.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\src\tree.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\test\files\0_simple.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\test\files\1_bushy.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\test\files\2_one_by_one.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\test\files\obj_factory.iced" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Keshav\Projects\blockchain_server\node_modules\merkle-tree\test\run.iced" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/curl.dat" afterPath="$PROJECT_DIR$/curl.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/merkle.js" afterPath="$PROJECT_DIR$/merkle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.js" afterPath="$PROJECT_DIR$/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userid.txt" afterPath="$PROJECT_DIR$/userid.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="blockchain_server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,21 +120,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="merkle.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/merkle.js">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="112" column="51" selection-start-line="112" selection-start-column="51" selection-end-line="112" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.5118243">
+              <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test.js">
+      <file leaf-file-name="message.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/message.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userid.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/userid.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="merkle.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/merkle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="59" column="63" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="curl.dat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/curl.dat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="131" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="180" />
               <folding />
             </state>
           </provider>
@@ -47,6 +184,17 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/test.js" />
+        <option value="$PROJECT_DIR$/merkle.js" />
+        <option value="$PROJECT_DIR$/userid.txt" />
+        <option value="$PROJECT_DIR$/curl.dat" />
+        <option value="$PROJECT_DIR$/server.js" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsGulpfileManager">
@@ -115,15 +263,48 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
   </component>
-  <component name="RunManager" selected="Node.js.test">
+  <component name="RunManager" selected="Node.js.server">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <method />
     </configuration>
     <configuration default="false" name="test" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="test.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="false" name="server" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
+      <method />
+    </configuration>
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Node.js.test" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.server" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -134,52 +315,91 @@
       <option name="number" value="Default" />
       <updated>1459737929691</updated>
     </task>
+    <task id="LOCAL-00001" summary="Fixed merkle.js, added negative test.">
+      <created>1459739046319</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1459739046319</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2528978" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973656" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3982684" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed merkle.js, added negative test." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed merkle.js, added negative test." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/merkle.js</url>
-          <line>113</line>
-          <option name="timeStamp" value="1" />
+          <line>104</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/merkle.js">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11764706">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merkle.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="112" column="51" selection-start-line="112" selection-start-column="51" selection-end-line="112" selection-end-column="51" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/message.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -187,7 +407,39 @@
     <entry file="file://$PROJECT_DIR$/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merkle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="63" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/curl.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="131" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="180" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userid.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5118243">
+          <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
           <folding />
         </state>
       </provider>

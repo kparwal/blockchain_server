@@ -2,7 +2,7 @@
 var http = require('http');
 var crypto = require('crypto');
 var hash = crypto.createHash('sha256');
-var merkle_base = require('merkle-tree').Base;
+var merkle_tree = require('./merkle.js');
 var express = require('express');
 var mongo_client = require('mongodb');
 var python_shell = require('python-shell');
@@ -16,7 +16,7 @@ var message_base = require('./message.js');
 var block_num = 0; //persistence required across runs
 var buffer = new hashmap();
 //Connect to mongodb
-app.use(body_parser.urlencoded({ extended: false }))
+app.use(body_parser.urlencoded({ extended: false }));
 var url = 'mongodb://localhost:27017/test';
 mongo_client.connect(url, function(err, db) {
 	assert.equal(null, err);
@@ -25,8 +25,9 @@ mongo_client.connect(url, function(err, db) {
 });
 
 //Create merkle tree
-var config = new merkle_base.Config({N:4, M:16});
-var current_tree = new merkle_base.MemTree(config);
+//var config = new merkle_base.Config({N:4, M:16});
+//var current_tree = new merkle_base.MemTree(config);
+var current_tree = new merkle_tree();
 
 //Message created
 app.post('/', function (request, response) {
@@ -45,46 +46,53 @@ app.post('/', function (request, response) {
 app.post('/complete', function (request, response) {
 	//find message in buffer list
 	var message = buffer.get(request.body.userid);
-	//complete message with new information
+    //complete message with new information
 	message.complete(request.body.pub_key, request.body.vid_url);
-	message.timestamp(moment());
-	//write message to tree
-	current_tree.upsert({
-		'key': hash_func(message),
-		'value': message.userid
-	});
-	current_tree.find({
-		'key': hash_func(message)
-	}, function (err, value) {
-		if(err) {
-			console.log("bad tree!")
-		} else {
-			assert.equal(value, message);
-			console.log("IT PROBABLY WORKS");
-		}
-	});
+    message.timestamp(moment());
+    //write message to tree
+    //current_tree.upsert({
+    //    'key': hash_func(message),
+    //    'value': message.userid
+    //});
+    current_tree.add(message.userid, message);
+    //current_tree.find({
+	//	'key': message.uuid
+	//}, function (err, value) {
+	//	if(err) {
+	//		console.log("bad tree!")
+	//	} else {
+	//		assert.equal(value, message);
+	//		console.log("IT PROBABLY WORKS");
+	//	}
+	//});
+    //if (current_tree.find(message.userid)) {
+     //   console.log("IT PROBABLY WORKS");
+    //}
+    response.sendStatus(200);
 });
 
 //Is my information in this merkle tree?
 app.get('/verify', function (request, response) {
 	//grab tree from block_num
-	
+    var tree = something;
 	//search tree for information
-	
+    var ok = tree.find(request.body.userid);
 	//return success or failure
+    if (ok) {
+        response.sendStatus(200);
+    } else {
+        response.sendStatus(204);
+    }
 });
 
 //Commit merkle tree to mongodb, write hash to blockchain, store txid with merkle root
 var interval = setInterval(function() {
-	//save tree to mongodb and get root
-	var merkle_root = null;
-	current_tree.lookup_root(function (root){
-		merkle_root = root;
+    //write hash to blockchain
+    var root = current_tree.root();
+    //retrieve txid and store with merkle root
 
-	});
-	//write hash to blockchain
-	
-	//retrieve txid and store with merkle root
+    //save tree to mongodb and get root
+	var merkle_root = null;
 },1000*60*60*24);
 
 var hash_func = function (data) {
@@ -92,6 +100,6 @@ var hash_func = function (data) {
 	hash.update(buffer_data);
     var digest = hash.digest('hex');
     return digest;
-}
+};
 
 app.listen(8080);
