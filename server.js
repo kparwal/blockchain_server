@@ -1,17 +1,22 @@
 'use strict'
 var http = require('http');
-var querystring = require('querystring');
-var merkle_base = require('merkle-tree');
+var crypto = require('crypto');
+var hash = crypto.createHash('sha256');
+var merkle_base = require('merkle-tree').Base;
 var express = require('express');
 var mongo_client = require('mongodb');
 var python_shell = require('python-shell');
 var assert = require('assert');
+var moment = require('moment');
+var uuid = require('node-uuid');
+var hashmap = require('hashmap');
+var body_parser = require('body-parser');
 var app = express();
-var message_base = require('./message');
+var message_base = require('./message.js');
 var block_num = 0; //persistence required across runs
-var buffer = [];
+var buffer = new hashmap();
 //Connect to mongodb
-
+app.use(body_parser.urlencoded({ extended: false }))
 var url = 'mongodb://localhost:27017/test';
 mongo_client.connect(url, function(err, db) {
 	assert.equal(null, err);
@@ -26,31 +31,38 @@ var current_tree = new merkle_base.MemTree(config);
 //Message created
 app.post('/', function (request, response) {
 	//console.log(request);
-	var fname = request.fname;
-	var lname = request.lname;
-	var hash = request.hash;
-	var message = new message_base(userid, fname, lname, hash);
-	message.timestamp(current_time);
-	buffer.push(message);
-	response.end('Received POST request!');
+	var userid = uuid.v1();
+	var fname = request.body.fname;
+	var lname = request.body.lname;
+	var key_hash = request.body.key_hash;
+	var message = new message_base(userid, fname, lname, key_hash);
+	message.timestamp(moment());
+	buffer.set(userid, message);
+	response.end(userid);
 });
-
-//Commit merkle tree to mongodb, write hash to blockchain, store txid with merkle root
-var interval = setInterval(function() {
-	//save tree to mongodb and get root
-	
-	//write hash to blockchain
-	
-	//retrieve txid and store with merkle root
-},1000*60*60*24);
 
 //complete message, commit to merkle tree
 app.post('/complete', function (request, response) {
 	//find message in buffer list
-
+	var message = buffer.get(request.body.userid);
 	//complete message with new information
-	
-	//write tree to mongo
+	message.complete(request.body.pub_key, request.body.vid_url);
+	message.timestamp(moment());
+	//write message to tree
+	current_tree.upsert({
+		'key': hash_func(message),
+		'value': message.userid
+	});
+	current_tree.find({
+		'key': hash_func(message)
+	}, function (err, value) {
+		if(err) {
+			console.log("bad tree!")
+		} else {
+			assert.equal(value, message);
+			console.log("IT PROBABLY WORKS");
+		}
+	});
 });
 
 //Is my information in this merkle tree?
@@ -61,5 +73,25 @@ app.get('/verify', function (request, response) {
 	
 	//return success or failure
 });
+
+//Commit merkle tree to mongodb, write hash to blockchain, store txid with merkle root
+var interval = setInterval(function() {
+	//save tree to mongodb and get root
+	var merkle_root = null;
+	current_tree.lookup_root(function (root){
+		merkle_root = root;
+
+	});
+	//write hash to blockchain
+	
+	//retrieve txid and store with merkle root
+},1000*60*60*24);
+
+var hash_func = function (data) {
+	var buffer_data = JSON.stringify(data);
+	hash.update(buffer_data);
+    var digest = hash.digest('hex');
+    return digest;
+}
 
 app.listen(8080);
