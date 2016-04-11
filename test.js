@@ -32,5 +32,7 @@ var obj = {
 };
 
 console.log(mytree);
+console.log(typeof(mytree) == "object");
+
 console.log(mytree.find(4));
 console.log(mytree.find(5));

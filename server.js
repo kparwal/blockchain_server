@@ -17,12 +17,27 @@ var block_num = 0; //persistence required across runs
 var buffer = new hashmap();
 //Connect to mongodb
 app.use(body_parser.urlencoded({ extended: false }));
-var url = 'mongodb://localhost:27017/test';
+var url = 'mongodb://127.0.0.1:27017/test';
+var globaldb;
 mongo_client.connect(url, function(err, db) {
+	console.log("At least it prints");
 	assert.equal(null, err);
+	globaldb = db;
+	process.stdout.write("hello: ");
 	console.log("Connected correctly to server.");
-	db.close();
+	//db.close();
 });
+
+// Insert the updated merkle tree into the mongodb database
+// var insertDocument = function(db, callback, merkletrees) {
+//    var docs = {"tree" : 123};
+//    var col = db.collection;
+//    col.insertOne(docs, function(err, result) {
+//     assert.equal(err, null);
+//     console.log("Inserted a document into the restaurants collection.");
+//     callback();
+//   });
+// };
 
 //Create merkle tree
 //var config = new merkle_base.Config({N:4, M:16});
@@ -33,12 +48,14 @@ var current_tree = new merkle_tree();
 app.post('/', function (request, response) {
 	//console.log(request);
 	var userid = uuid.v1();
+	console.log("User Id is " + userid);
 	var fname = request.body.fname;
 	var lname = request.body.lname;
 	var key_hash = request.body.key_hash;
 	var message = new message_base(userid, fname, lname, key_hash);
 	message.timestamp(moment());
 	buffer.set(userid, message);
+	console.log(buffer);
 	response.end(userid);
 });
 
@@ -55,6 +72,19 @@ app.post('/complete', function (request, response) {
     //    'value': message.userid
     //});
     current_tree.add(message.userid, message);
+    // Insert tree into the database
+    console.log(current_tree);
+    globaldb.collection("tree").insertOne({"tree":current_tree},function(err, result) {
+        assert.equal(err, null);
+        console.log(result);
+        //findC();
+        console.log("Inserted a document into the restaurants collection.");
+    });
+    
+    // insertDocument(globaldb, function() {
+    //   globaldb.close();
+    // }, current_tree);
+
     //current_tree.find({
 	//	'key': message.uuid
 	//}, function (err, value) {
