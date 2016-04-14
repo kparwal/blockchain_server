@@ -1,0 +1,7 @@
+var findC = function() {globaldb.collection("tree",function(err,collection){
+        collection.find().toArray(function(err, companies) {
+            console.log(companies[0].tree);
+            
+            //assert.equal(current_tree, companies[0].tree);
+        });
+    })};
