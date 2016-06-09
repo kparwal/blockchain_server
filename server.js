@@ -17,27 +17,12 @@ var block_num = 0; //persistence required across runs
 var buffer = new hashmap();
 //Connect to mongodb
 app.use(body_parser.urlencoded({ extended: false }));
-var url = 'mongodb://127.0.0.1:27017/test';
-var globaldb;
+var url = 'mongodb://localhost:27017/test';
 mongo_client.connect(url, function(err, db) {
-	console.log("At least it prints");
-	assert.equal(null, err);
-	globaldb = db;
-	process.stdout.write("hello: ");
-	console.log("Connected correctly to server.");
-	//db.close();
+    assert.equal(null, err);
+    console.log("Connected correctly to server.");
+    db.close();
 });
-
-// Insert the updated merkle tree into the mongodb database
-// var insertDocument = function(db, callback, merkletrees) {
-//    var docs = {"tree" : 123};
-//    var col = db.collection;
-//    col.insertOne(docs, function(err, result) {
-//     assert.equal(err, null);
-//     console.log("Inserted a document into the restaurants collection.");
-//     callback();
-//   });
-// };
 
 //Create merkle tree
 //var config = new merkle_base.Config({N:4, M:16});
@@ -46,25 +31,23 @@ var current_tree = new merkle_tree();
 
 //Message created
 app.post('/', function (request, response) {
-	//console.log(request);
-	var userid = uuid.v1();
-	console.log("User Id is " + userid);
-	var fname = request.body.fname;
-	var lname = request.body.lname;
-	var key_hash = request.body.key_hash;
-	var message = new message_base(userid, fname, lname, key_hash);
-	message.timestamp(moment());
-	buffer.set(userid, message);
-	console.log(buffer);
-	response.end(userid);
+    //console.log(request);
+    var userid = uuid.v1();
+    var fname = request.body.fname;
+    var lname = request.body.lname;
+    var key_hash = request.body.key_hash;
+    var message = new message_base(userid, fname, lname, key_hash);
+    message.timestamp(moment());
+    buffer.set(userid, message);
+    response.end(userid);
 });
 
 //complete message, commit to merkle tree
 app.post('/complete', function (request, response) {
-	//find message in buffer list
-	var message = buffer.get(request.body.userid);
+    //find message in buffer list
+    var message = buffer.get(request.body.userid);
     //complete message with new information
-	message.complete(request.body.pub_key, request.body.vid_url);
+    message.complete(request.body.pub_key, request.body.vid_url);
     message.timestamp(moment());
     //write message to tree
     //current_tree.upsert({
@@ -72,29 +55,16 @@ app.post('/complete', function (request, response) {
     //    'value': message.userid
     //});
     current_tree.add(message.userid, message);
-    // Insert tree into the database
-    console.log(current_tree);
-    globaldb.collection("tree").insertOne({"tree":current_tree},function(err, result) {
-        assert.equal(err, null);
-        console.log(result);
-        //findC();
-        console.log("Inserted a document into the restaurants collection.");
-    });
-    
-    // insertDocument(globaldb, function() {
-    //   globaldb.close();
-    // }, current_tree);
-
     //current_tree.find({
-	//	'key': message.uuid
-	//}, function (err, value) {
-	//	if(err) {
-	//		console.log("bad tree!")
-	//	} else {
-	//		assert.equal(value, message);
-	//		console.log("IT PROBABLY WORKS");
-	//	}
-	//});
+    //  'key': message.uuid
+    //}, function (err, value) {
+    //  if(err) {
+    //      console.log("bad tree!")
+    //  } else {
+    //      assert.equal(value, message);
+    //      console.log("IT PROBABLY WORKS");
+    //  }
+    //});
     //if (current_tree.find(message.userid)) {
      //   console.log("IT PROBABLY WORKS");
     //}
@@ -103,11 +73,11 @@ app.post('/complete', function (request, response) {
 
 //Is my information in this merkle tree?
 app.get('/verify', function (request, response) {
-	//grab tree from block_num
+    //grab tree from block_num
     var tree = something;
-	//search tree for information
+    //search tree for information
     var ok = tree.find(request.body.userid);
-	//return success or failure
+    //return success or failure
     if (ok) {
         response.sendStatus(200);
     } else {
@@ -119,15 +89,25 @@ app.get('/verify', function (request, response) {
 var interval = setInterval(function() {
     //write hash to blockchain
     var root = current_tree.root();
+    var config = {
+        args = [root]
+    };
+    python_shell("python-OP_RETURN\\store-OP_RETURN", config, function (err, results){
+        if (err) {
+            console.log("Python Error");
+        } else {
+            console.log("txid" + results);
+        }
+    });
     //retrieve txid and store with merkle root
 
     //save tree to mongodb and get root
-	var merkle_root = null;
-},1000*60*60*24);
+    var merkle_root = null;
+}, 1000*60*60*24);
 
 var hash_func = function (data) {
-	var buffer_data = JSON.stringify(data);
-	hash.update(buffer_data);
+    var buffer_data = JSON.stringify(data);
+    hash.update(buffer_data);
     var digest = hash.digest('hex');
     return digest;
 };
